@@ -16,7 +16,7 @@ See [CrunchTime] (https://youtu.be/ZIG831zqisE)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="https://i.gyazo.com/d18d6fe0fbad70c10e305c472e1cccff.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
