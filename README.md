@@ -22,4 +22,3 @@ See [CrunchTime] (https://youtu.be/ZIG831zqisE)
 
 Thanks Jasper for your patience with my dumb questions!
 
-*Feel free to enhance your README. For Markdown syntax, see [the GitHub Guides](https://guides.github.com/features/mastering-markdown/). Remove this line in your submission.*
