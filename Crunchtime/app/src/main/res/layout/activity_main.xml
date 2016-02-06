@@ -71,8 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="reps/min"
-        android:id="@+id/textView"
+        android:text="reps"
+        android:id="@+id/textview"
         android:layout_below="@+id/pushUpEdit"
         android:layout_alignStart="@+id/pushUpEdit"
         android:layout_alignEnd="@+id/pushUpEdit" />
@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="reps/min"
+        android:text="reps"
         android:id="@+id/textView2"
         android:layout_below="@+id/sitUpEdit"
         android:layout_alignStart="@+id/sitUpEdit" />
@@ -187,8 +187,56 @@
         android:layout_height="wrap_content"
         android:text="BURN!"
         android:id="@+id/burn"
-        android:layout_below="@+id/Calorie"
-        android:layout_alignEnd="@+id/JogButton"
-        android:layout_alignParentStart="true" />
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/JogButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/repsMin"
+        android:text="0"
+        android:layout_below="@+id/burn"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Minutes"
+        android:text="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/repsMin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="reps/min"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/Fillin"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="minutes"
+        android:id="@+id/textView8"
+        android:layout_alignBottom="@+id/Minutes"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill In"
+        android:id="@+id/Fillin"
+        android:layout_above="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/burn" />
 
 </RelativeLayout>

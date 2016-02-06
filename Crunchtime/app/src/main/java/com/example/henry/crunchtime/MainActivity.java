@@ -18,11 +18,14 @@ public class MainActivity extends Activity {
         final EditText JJEdit = (EditText) findViewById(R.id.jjEdit);
         final EditText jogEdit = (EditText) findViewById(R.id.jogEdit);
         final EditText calor = (EditText) findViewById(R.id.Calorie);
+        final EditText reps = (EditText) findViewById(R.id.repsMin);
+        final EditText mins = (EditText) findViewById(R.id.Minutes);
         Button convertButton = (Button) findViewById(R.id.PushUpButton);
         Button sitUpCon = (Button) findViewById(R.id.situpButton);
         Button jumpButton = (Button) findViewById(R.id.jjbutton);
         Button jogButton = (Button) findViewById(R.id.JogButton);
         Button Burn = (Button) findViewById(R.id.burn);
+        Button Convert = (Button) findViewById(R.id.Fillin);
 
         jogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +98,15 @@ public class MainActivity extends Activity {
             }
         });
 
-
+        Convert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double rep = Double.valueOf(reps.getText().toString());
+                double min = Double.valueOf(mins.getText().toString());
+                PushUpsEdit.setText(String.valueOf(rep*min));
+                SitUpsEdit.setText(String.valueOf(rep*min));
+            }
+        });
     }
 
 
