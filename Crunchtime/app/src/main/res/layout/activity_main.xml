@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/JogEdit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Push Ups"
+        android:id="@+id/PushUps"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/pushUpEdit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/pushUpEdit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sit Ups"
+        android:id="@+id/SitUps"
+        android:layout_below="@+id/PushUpButton"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/situpButton"
+        android:layout_above="@+id/situpButton"
+        android:layout_alignEnd="@+id/PushUpButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sitUpEdit"
+        android:layout_below="@+id/PushUpButton"
+        android:layout_alignParentEnd="true"
+        android:text="0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/PushUpButton"
+        android:layout_below="@+id/pushUpEdit"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/situpButton"
+        android:layout_below="@+id/sitUpEdit"
+        android:layout_alignStart="@+id/PushUpButton"
+        android:layout_toStartOf="@+id/pushUpEdit"
+        android:layout_alignEnd="@+id/PushUpButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="reps/min"
+        android:id="@+id/textView"
+        android:layout_below="@+id/pushUpEdit"
+        android:layout_alignStart="@+id/pushUpEdit"
+        android:layout_alignEnd="@+id/pushUpEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="reps/min"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/sitUpEdit"
+        android:layout_alignStart="@+id/sitUpEdit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jumping Jacks"
+        android:id="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/jjEdit"
+        android:layout_toStartOf="@+id/jjEdit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/jjEdit"
+        android:layout_below="@+id/situpButton"
+        android:layout_alignStart="@+id/textView2"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="minutes"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/jjEdit"
+        android:layout_alignStart="@+id/jjEdit" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO!"
+        android:id="@+id/jjbutton"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/situpButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jogging"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/jjbutton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO!"
+        android:id="@+id/JogButton"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/jjbutton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/jogEdit"
+        android:layout_above="@+id/JogButton"
+        android:layout_alignStart="@+id/textView4"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="minutes"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/jogEdit"
+        android:layout_alignStart="@+id/jogEdit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/Calorie"
+        android:layout_below="@+id/JogButton"
+        android:layout_alignStart="@+id/textView6"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calories burned"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/Calorie"
+        android:layout_alignStart="@+id/Calorie" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BURN!"
+        android:id="@+id/burn"
+        android:layout_below="@+id/Calorie"
+        android:layout_alignEnd="@+id/JogButton"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
